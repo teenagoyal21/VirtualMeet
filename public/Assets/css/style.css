@@ -1,0 +1,463 @@
+body {
+    font-family: 'Roboto', 'Lato', sans-serif !important;
+    font-size: large;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    height: 43px;
+}
+
+.navbar-brand {
+    font-size: 27px;
+    padding-left: 10px;
+    font-family: 'Lato', sans-serif;
+    color: #000; /* Text color */
+}
+
+.nav-item a{
+    color: gray !important;
+    font-size: 16px;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+.display-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li.nav-item {
+    padding: 0 10px;
+}
+.signin-image {
+    height: 390px;
+    border: 25px solid white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px gray;
+}
+
+textarea:focus, input:focus {
+    outline: none !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.jumbotron {
+    background-color: white;
+}
+
+.jumbotron {
+    display: flex; /* Use flexbox to align elements side by side */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Vertically center the items */
+    padding: 2rem; /* Optional: Add some padding */
+}
+
+.text-content {
+    text-align: left; /* Ensure text is aligned to the left */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure image scales well */
+    height: auto; /* Maintain aspect ratio */
+    border: 25px solid white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px gray;
+}
+
+
+/* --------------------------------INDEX PAGE-------------------------------------- */
+.home-wrap {
+    background-color: rgb(31, 30, 30);
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.g-top {
+    overflow: hidden;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.video-wrap {
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.video-wrap > * {
+    flex: 1 1 250px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: rgba(50, 50, 50, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.g-top-left {
+    position: absolute;
+    right: 0;
+    height: 8vh;
+    top: 0;
+    border-bottom-left-radius: 10px;
+    background: rgba(142, 137, 137, 0.9);
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.three-buttons{
+    align-items: center;
+    width: 25vb;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-left-participant-wrap {
+    position: relative;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cursor-pointer:hover {
+    
+    color: black;
+}
+
+.top-left-participant-count {
+    position: absolute;
+    top: -2px;
+    right: -3px;
+    font-size: 10px;
+    background: rgb(198, 21, 21);
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-weight: bold;
+}
+
+.g-bottom {
+    overflow: hidden;
+    padding: 0 20px;
+    box-shadow: 0 0 5px black;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: rgb(40, 40, 40);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.bottom-left {
+    position: relative;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.action-icon-style {
+    font-size: 16px !important;
+    height: 50px;
+    width: 50px;
+    border: 2px solid lightgray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.action-icon-style:hover {
+    background-color: lightgray;
+    transform: scale(1.1);
+}
+
+.end-call-wrap {
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    background-color: red;
+    color: white;
+    border: none;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.end-call-wrap:hover {
+    transform: rotate(135deg) scale(1.1);
+}
+
+.bottom-right {
+    display: flex;
+}
+
+.present-now-wrap {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .video-wrap {
+        height: 400px;
+    }
+
+    .d-flex {
+        display: flex;
+    }
+
+    .video-wrap > * {
+        flex: 1 1 200px;
+    }
+
+    .action-icon-style {
+        height: 40px;
+        width: 40px;
+    }
+
+    .end-call-wrap {
+        height: 45px;
+        width: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-wrap {
+        height: 300px;
+        gap: 5px;
+    }
+
+    .g-top-left {
+        height: 6vh;
+        padding: 5px;
+    }
+
+    .action-icon-style {
+        height: 35px;
+        width: 35px;
+    }
+
+    .end-call-wrap {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+.top-remote-video-show-wrap{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+video{
+    border: 1px solid gray;
+    width: 300px;
+}
+
+/* Flex container for main layout */
+.top-remote-video-show-wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch; /* Align vertically */
+    gap: 10px; /* Space between video and sidebar */
+    height: 100%; /* Take full height */
+}
+
+/* Main video container */
+#meetingContainer {
+    flex-basis: 75%; /* 75% of the width */
+    max-width: 75%;
+    height: calc(100vh - 100px); /* Adjust height to fit within viewport */
+    background-color: #333; /* Optional for visibility */
+    border-radius: 8px; /* Rounded corners for a cleaner look */
+    margin: 10px; /* Add spacing around the container */
+}
+
+/* Right sidebar */
+.g-right-details-wrap {
+    flex-basis: 25%; /* 25% of the width */
+    max-width: 25%;
+    height: 100%; /* Adjust height to fit within viewport */
+    background-color: #999494; /* Sidebar background color */
+    padding: 15px; /* Inner spacing for content */
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    border-radius: 8px; /* Optional rounded corners */
+}
+
+/* Sidebar inner elements (Meeting Details, Chat, etc.) */
+.g-right-details-wrap h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.g-right-details-wrap .chat-box {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2a2a2a; /* Background for the chat box */
+    border-radius: 6px;
+    color: #ffffff;
+}
+
+/* Buttons or Controls */
+button {
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.chat-message-sent-input-field{
+    color: black;
+    border: none;
+    background: #999494;
+    padding: 5px;
+    width: 85%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.chat-message-sent {
+    width: 100%;
+    margin-top: 55vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.people-chat-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.meeting-heading-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.meeting-heading-cross {
+    margin-right: 20%;
+    margin-bottom: 10%;
+}
+
+.in-call-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.active {
+    background-color: #00808047;
+    border-radius: 5px;
+}
+
+.top-box {
+    background-color: rgb(14 6 6);
+    position: fixed;
+    width: 30%;
+    height: 30%;
+    top: 20.5%;
+    left: 35.5%;
+    display: block;
+    border-radius: 10px;
+    z-index: 999;
+    columns: white;
+    border: 2px solid white;
+}
+
+.call-leave-cancel-action {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.call-cancel-action {
+    background-color: white;
+    color: purple;
+}
+
+.g-details-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.bottom-left {
+    position: relative;
+    padding: 5px;
+}
+
+.g-details {
+    position: fixed;
+    width: 25vw;
+    background-color: white;
+    margin-top: -135px;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.chat-heading {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.g-details-heading-show {
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.recording-show {
+    position: fixed;
+    margin-bottom: 110px;
+    width: 220px;
+    display: none;
+}
+
+.chat-message-show {
+    width: 20%;
+}
+
